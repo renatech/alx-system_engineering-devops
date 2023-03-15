@@ -1,9 +1,2 @@
 #!/bin/bash
-echo "Local variables:"
-set | grep "^[[:alpha:]_][[:alnum:]_]*="
-echo ""
-echo "Environment variables:"
-printenv
-echo ""
-echo "Functions:"
-declare -F | awk '{print $3}'
+set
